@@ -1,0 +1,20 @@
+# config.yaml (Versión Corregida)
+
+db_name: "clima_alerta.db"
+
+openweathermap_api_key: "TU_API_KEY_AQUI"
+lat: TU_LATITUD_AQUI      # <--- CAMBIO: de 'latitud' a 'lat'
+lon: TU_LONGITUD_AQUI     # <--- CAMBIO: de 'longitud' a 'lon'
+zona_horaria: "America/Caracas"
+
+telegram_token: "TU_TOKEN_DE_TELEGRAM"
+telegram_chat_id: "TU_CHAT_ID"
+
+# --- ESTRUCTURA CORREGIDA: umbrales agrupados ---
+umbrales:
+  intervalo_consulta_min: 15
+  limite_lluvia_mm: 2.0
+  limite_temp_max: 35.0
+  limite_temp_min: 18.0
+  limite_humedad: 85
+  umbral_ia_probabilidad: 0.75 # Valor de ejemplo, ajústalo si es necesario
